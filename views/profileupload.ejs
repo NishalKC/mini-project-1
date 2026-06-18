@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-full min-h-screen bg-zinc-900 p-10 text-white">
+        <a class="mb-4 inline-block  bg-green-700 py-3 px-5 rounded-md" href="/profile">Go Back</a>
+        <h1 class="text-3xl mb-7 ">upload profile pic </h1>
+        <form autocomplete="off"  action="/upload" method="post" enctype="multipart/form-data">
+            <input class="bg-white text-blue-500 p-3" type="file" name="image">
+            <input type="submit" value="upload file" class="py-3 px-5  bg-blue-500 rounded-md">
+        </form>
+    </div>
+</body>
+</html>
