@@ -290,8 +290,7 @@ function isLoggedIn(req, res, next) {
     return res.redirect("/login");
   }
 }
-const connectDB = require("./config/db")
-connectDB()
+require("./config/db")
 /* ================= SERVER ================= */
 
 const PORT = process.env.PORT || 3000;
