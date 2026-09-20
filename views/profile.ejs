@@ -57,12 +57,13 @@
             <div class="messages inline-block w-1/3  bg-zinc-700 rounded-md">
                 <h1 class="text-3xl algin-center text-blue-500  px-10 py-4">Friend request</h1>
 
-                    <%user.messages.forEach((msg) => {%>
+                    <%requser.forEach((requser) => {%>
                         <div class="message p-3">
                             <div class="flex gap-3 px-10 py-3">
                                 <img style="border-radius: 50%;" class="object-cover h-13 w-13 bg-red-500" src="/images/uploads/<%= requser.profilepic%>" alt="">
-                                <h1 style="transform: translateY(10px);" class="text-xl"><%= requser.username%></h1>
-                                
+                                <h1 style="transform: translateY(10px);" class="text-xl">
+                                     <%= requser.username %>
+                                </h1>
                             </div>
                             <div class="btn flex gap-8 px-11">
                                 <a href="/request/<%= requser._id%>">
